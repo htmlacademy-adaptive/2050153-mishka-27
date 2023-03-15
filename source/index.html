@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="header-wrapper container">
+      <a class="header__logo logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/logo-mishka-desktop.svg">
+          <source media="(min-width: 772px)" srcset="img/logo/logo-mishka-tablet.svg">
+          <img class="logo__image" src="img/logo/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип Mishka и ссылка на главную страницу.">
+        </picture>
+      </a>
+      <nav class="header__nav nav nav--closed nav--nojs">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site-list">
+            <li class="nav__item site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="nav__item site-list__item">
+              <a class="site-list__link" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__list user-list">
+            <li class="nav__item user-list__item">
+              <a class="user-list__link" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="nav__item user-list__item">
+              <a class="user-list__link" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p class="header__text">Бесплатная доставка по России</p>
+    </div>
+  </header>
+
+</body>
+
 </html>
