@@ -17,7 +17,8 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo/logo-mishka-desktop.svg">
           <source media="(min-width: 772px)" srcset="img/logo/logo-mishka-tablet.svg">
-          <img class="logo__image" src="img/logo/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип Mishka и ссылка на главную страницу.">
+          <img class="logo__image" src="img/logo/logo-mishka-mobile.svg" width="86" height="35"
+            alt="Логотип Mishka и ссылка на главную страницу.">
         </picture>
       </a>
       <nav class="header__nav nav nav--closed nav--nojs">
@@ -54,7 +55,86 @@
       <p class="header__text">Бесплатная доставка по России</p>
     </div>
   </header>
-
+  <main class="main">
+    <h1 class="visually-hidden">Добро пожаловать на сайт Мишка</h1>
+    <section class="main__hero hero">
+      <div class="hero__container conteiner">
+        <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a class="hero__quick-link">
+              <p class="hero__quick-link-text">Предметы интерьера</p>
+            </a>
+          </li>
+          <li class="hero__item">
+            <a class="hero__quick-link">
+              <p class="hero__quick-link-text">Детские игрушки</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__promotion promotion">
+      <div class="promotion__container conteiner">
+        <h2 class="promotion__title">Вязаные корзинки</h2>
+        <b class="promotion__promotion-text">Товар недели</b>
+        <p class="promotion__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+          размерах.</p>
+        <ul class="promotion__list">
+          <li class="promotion__item">
+            <p class="promotion__text">Цвет:</p>
+            <p class="promotion__net">тиффани/серый</p>
+          </li>
+          <li class="promotion__item">
+            <p class="promotion__text">Диаметр:</p>
+            <p class="promotion__net">25 см</p>
+          </li>
+          <li class="promotion__item">
+            <p class="promotion__text">Высота:</p>
+            <p class="promotion__net">15 см</p>
+          </li>
+        </ul>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/promotion-triple-set-desktop.jpg">
+          <source media="(min-width: 772px)" srcset="img/promotion-triple-set-tablet.jpg">
+          <img class="promotion__product-image" src="img/promotion-triple-set-mobile.jpg" width="260" height="315"
+            alt="Фотография товара недели.">
+        </picture>
+        <div class="promotion__inner-wrapper">
+          <b class="promotion__promotion-product-cost">Цена: 990 руб.</b>
+          <a class="promotion__button button" href="form.html">Заказать</a>
+        </div>
+        <div class="promotion__modal-container">
+          <div class="promotion__modal modal">
+            <h3 class="modal__title">Добавить в корзину</h3>
+            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="modal__form-group">
+                <legend class="modal__form-group-title">
+                  Выберите размер:
+                </legend>
+                <div class="modal__form-group-wrapper">
+                  <label class="modal__form-group-control">
+                    <input class="visually-hidden modal__form-group-input" type="radio" name="size" value="Small"
+                      checked>
+                    <span class="modal__form-group-control-label">S</span>
+                  </label>
+                  <label class="modal__form-group-control">
+                    <input class="visually-hidden modal__form-group-input" type="radio" name="size" value="Medium">
+                    <span class="modal__form-group-control-label">M</span>
+                  </label>
+                  <label class="modal__form-group-control">
+                    <input class="visually-hidden modal__form-group-input" type="radio" name="size" value="Large">
+                    <span class="modal__form-group-control-label">L</span>
+                  </label>
+                </div>
+              </fieldset>
+              <button class="modal__button button" type="submit">Добавить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
