@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  min-width: $vp-320;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $vp-770) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 0 4.5%;
+  }
+}
