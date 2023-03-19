@@ -1,0 +1,58 @@
+.logo {
+  pointer-events: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    outline: none;
+  }
+}
+
+.logo__image,
+.logo__footer {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.logo__image {
+  @media (min-width: $vp-770) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.logo__footer {
+  display: none;
+
+  @media (min-width: $vp-770) {
+    display: flex;
+  }
+}
+
+.logo__footer-icon {
+  @media (min-width: $vp-770) {
+    width: 102px;
+    height: 34px;
+  }
+}

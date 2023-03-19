@@ -1,0 +1,102 @@
+.nav--closed .nav__item {
+  display: none;
+}
+
+.nav__toggle {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 29px;
+  right: 30px;
+  left: auto;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  z-index: 3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: 2px solid rgb(181, 181, 181);
+    outline-offset: 2px;
+    background-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $vp-770) {
+    display: none;
+  }
+}
+
+.nav--closed .nav__toggle {
+  background-image: url("../img/toggle-open-button.svg");
+  background-position: 0 3px;
+}
+
+.nav--opened .nav__toggle {
+  background-image: url("../img/toggle-close-button.svg");
+  background-position: 0 0;
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+.nav--nojs .nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav--nojs .nav__list {
+  position: static;
+  width: 100%;
+
+  @media (min-width: $vp-770) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  display: flex;
+  min-height: 79px;
+  width: 100%;
+  align-items: center;
+  padding-left: 24%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  box-shadow: 0px 1px 0px $color-whisper-grey, inset 0px 1px 0px $color-whisper-grey;
+}
+
+.nav--nojs .nav__item {
+  display: flex;
+}
+
+.nav__item a {
+  color: $color-black;
+}

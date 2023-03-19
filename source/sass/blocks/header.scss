@@ -1,0 +1,31 @@
+.header {
+  min-height: 79px;
+  min-width: 100%;
+  position: relative;
+  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  width: 100%;
+  min-width: $vp-320;
+  margin: 0 auto;
+}
+
+.header__logo {
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.header__nav {
+  display: flex;
+  min-width: 100%;
+}
+
+.header__text {
+  display: none;
+}
