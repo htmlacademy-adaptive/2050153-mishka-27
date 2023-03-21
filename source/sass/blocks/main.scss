@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main__promotion {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main__about-us {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main__feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+

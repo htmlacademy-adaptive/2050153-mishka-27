@@ -1,5 +1,23 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $vp-1150) {
+    display: grid;
+  }
+}
+
+.nav__wrapper {
+  width: 100%;
+}
+
 .nav--closed .nav__item {
   display: none;
+
+  @media (min-width: $vp-770) {
+    display: grid;
+  }
 }
 
 .nav__toggle {
@@ -86,10 +104,11 @@
   min-height: 79px;
   width: 100%;
   align-items: center;
-  padding-left: 24%;
+  padding-left: 30%;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  color: $color-black;
   box-shadow: 0px 1px 0px $color-whisper-grey, inset 0px 1px 0px $color-whisper-grey;
 }
 

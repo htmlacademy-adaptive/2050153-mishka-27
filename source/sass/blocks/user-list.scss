@@ -1,6 +1,6 @@
 .user-list {
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 79px;
   left: 0;
 }
@@ -8,22 +8,14 @@
 .user-list__item {
   z-index: 2;
   background-color: $color-white;
+}
 
-  & :hover {
-    opacity: 0.6;
-  }
-
-  & :active {
-    opacity: 0.3;
-  }
-
-  & :focus-visible {
-    outline: 2px solid $color-charcoal-grey;
-  }
-
-  & :invalid {
-    background-color: $color-whisper-grey;
-  }
+.user-list__link-icon {
+  position: absolute;
+  top: 2px;
+  left: -47px;
+  color: inherit;
+  opacity: 0.2;
 }
 
 .user-list__link {
@@ -31,39 +23,36 @@
   display: flex;
   position: relative;
 
-  &::before {
-    position: absolute;
-    width: 21px;
-    height: 18px;
-    top: 2px;
-    left: -47px;
+  &:hover .user-list__link-icon {
+    fill: $color-downy;
+    color: $color-downy;
+    opacity: 1;
   }
-}
 
-.user-list__link--search {
-  &::before {
-    content: url("../img/search-icon.svg");
+  &:hover .user-list__link-text {
+    opacity: 0.6;
   }
-}
 
-.user-list__link--cart {
-  &::before {
-    content: url("../img/cart-icon.svg");
+  &:active .user-list__link-icon {
+    fill: $color-downy;
+    color: $color-downy;
+    opacity: 0.3;
+  }
+
+  &:active .user-list__link-text {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-charcoal-grey;
+  }
+
+  &:invalid {
+    background-color: $color-whisper-grey;
   }
 }
 
 .user-list__link--current {
   cursor: default;
   pointer-events: none;
-}
-
-.user-list__item ~ .user-list__link::before {
-  & :hover {
-    opacity: 1;
-    color: $color-downy;
-  }
-
-  & :active {
-    color: $color-downy;
-  }
 }
