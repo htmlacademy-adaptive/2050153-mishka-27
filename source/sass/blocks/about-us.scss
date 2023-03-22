@@ -1,0 +1,70 @@
+.about-us {
+  width: 100%;
+}
+
+.about-us__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.about-us__item {
+  margin: 0;
+  padding-top: 82px;
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: max-content;
+    height: max-content;
+  }
+
+  &--eco::before {
+    content: url("../img/eco-flower-icon.svg");
+    top: 28px;
+  }
+
+  &--price::before {
+    content: url("../../img/price-money-icon.svg");
+    top: 30px;
+  }
+
+  &--likes::before {
+    content: url("../../img/likes-heart-icon.svg");
+    top: 35px;
+  }
+
+  &--hand-made::before {
+    content: url("../../img/hand-made-ball-icon.svg");
+    top: 32px;
+  }
+
+  &--support::before {
+    content: url("../../img/support-rocket-icon.svg");
+    top: 33px;
+  }
+
+  &--present::before {
+    content: url("../../img/present-icon.svg");
+    top: 32px;
+  }
+}
+
+.about-us__text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-black;
+}
