@@ -1,0 +1,98 @@
+.feedback {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/promotion-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 6px;
+  }
+}
+
+.feedback__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+  margin-bottom: 14px;
+}
+
+.feedback__text {
+  margin: 0;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+
+.feedback__inner-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.feedback__person-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+  margin-bottom: 5px;
+}
+
+.feedback__person-link {
+  margin: 0;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.feedback__slider {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  min-height: 52px;
+  margin-bottom: 38px;
+}
+
+.feedback__slider-button {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  background-color: inherit;
+  border: none;
+  outline: 1px solid $color-whisper-grey;
+  min-height: 52px;
+
+  &--left {
+    margin-left: 1px;
+
+    & .feedback__slider-button-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover .feedback__slider-button-icon {
+    opacity: 0.6;
+  }
+
+  &:active .feedback__slider-button-icon {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-dark-cyan;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+.feedback__button {
+  min-height: 52px;
+}
