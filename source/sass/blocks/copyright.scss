@@ -1,0 +1,52 @@
+
+.copyright__icon {
+  color: $color-downy;
+}
+
+.copyright__link {
+  pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover .copyright__icon {
+    fill: $color-puerto-rico-2;
+    color: $color-puerto-rico-2;
+  }
+
+  &:active .copyright__icon {
+    fill: rgba($color-puerto-rico-2, 0.3);
+    color: rgba($color-puerto-rico-2, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-puerto-rico-2;
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active,
+  &:disabled:focus {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+}
+
+.copyright__description,
+.copyright__icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.copyright__description {
+  display: flex;
+  margin-right: 27px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-black;
+}
