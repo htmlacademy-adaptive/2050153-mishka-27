@@ -1,16 +1,33 @@
 .user-list {
   width: 100%;
   position: relative;
-  // top: 79px;
-  // left: 0;
+  top: 79px;
 
   @media (min-width: $vp-768) {
     width: 53%;
-
+    height: 100%;
+    top: 0;
     margin-left: auto;
-    z-index: 2;
+    z-index: 3;
     background-color: inherit;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 200vw;
+      right: -100vw;
+      height: 100%;
+      background-color: $color-white;
+      border-bottom: 1px solid $color-whisper-grey;
+      z-index: -2;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    order: 2;
+    width: 36%;
   }
 }
 
@@ -19,17 +36,15 @@
   background-color: $color-white;
 
   @media (min-width: $vp-768) {
-    padding: 32px 50px 32px 38px;
-    border: 1px solid rgba($color-black, 0.1);
+    padding: 0 50px 0 38px;
+    border-left: 1px solid rgba($color-black, 0.1);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: inherit;
 
     &--search {
-      min-width: 20%;
-      padding: 30px 20px 30px 20px;
-      margin-right: -1px;
-    }
-
-    &--cart {
-      min-width: 80%;
+      padding: 0 20px 0 20px;
     }
   }
 }
@@ -38,6 +53,7 @@
   color: inherit;
   display: flex;
   position: relative;
+  padding: 22px 0 22px 0;
 
   &:hover .user-list__link-icon {
     fill: $color-downy;
@@ -71,7 +87,7 @@
     min-width: 211px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    padding: 37px 0 26px 0;
 
     &--search {
       min-width: 20%;
@@ -80,10 +96,6 @@
 
     &--search .user-list__link-text {
       display: none;
-    }
-
-    &--search .user-list__link-icon {
-      margin-left: 5px;
     }
   }
 }
@@ -95,7 +107,7 @@
 
 .user-list__link-icon {
   position: absolute;
-  top: 2px;
+  top: 23px;
   left: -47px;
   color: inherit;
   opacity: 0.2;
@@ -103,5 +115,18 @@
   @media (min-width: $vp-768) {
     position: relative;
     left: 0;
+    top: 0;
+    display: inline-block;
+  }
+}
+
+.user-list__link-text {
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    width: 211px;
+    text-align: end;
+    margin-left: auto;
   }
 }

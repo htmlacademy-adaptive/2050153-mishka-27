@@ -4,7 +4,7 @@
   position: absolute;
   top: 22px;
   left: calc(50% - 43px);
-  z-index: 5;
+  z-index: 10;
 
   &:hover {
     opacity: 0.6;
@@ -31,6 +31,15 @@
     display: flex;
     align-items: center;
     min-height: 90px;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 7px;
   }
 }
 

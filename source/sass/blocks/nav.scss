@@ -134,4 +134,7 @@
 
 .nav__item a {
   color: $color-black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
