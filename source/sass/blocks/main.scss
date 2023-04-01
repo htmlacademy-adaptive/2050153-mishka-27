@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
 }
 
 .main__promotion {
@@ -15,12 +19,29 @@
   flex-direction: column;
   padding-bottom: 42px;
   margin-bottom: 31px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 0;
+    margin-bottom: 68px;
+  }
 }
 
 .main__about-us {
   display: flex;
   flex-direction: column;
   margin-bottom: 58px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-bottom: 90px;
+  }
 }
 
 .main__feedback {

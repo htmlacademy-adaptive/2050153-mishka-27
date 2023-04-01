@@ -2,12 +2,24 @@
   width: 100%;
 }
 
+.about-us__wrapper{
+  @media (min-width: $vp-1150) {
+    width: 794px;
+  }
+}
+
 .about-us__title {
   margin: 0;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: $color-black;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 42px;
+  }
 }
 
 .about-us__list {
@@ -16,6 +28,12 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 100%;
+
+  @media (min-width: $vp-768) {
+    column-width: 50%;
+    column-count: 2;
+    display: block;
+  }
 }
 
 .about-us__item {
@@ -67,4 +85,10 @@
   font-size: 17px;
   line-height: 20px;
   color: $color-black;
+  margin: 0;
+
+  @media (min-width: $vp-768) {
+    min-width: 235px;
+    max-width: 304px;
+  }
 }
