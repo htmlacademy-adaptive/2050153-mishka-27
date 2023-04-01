@@ -49,6 +49,16 @@
   flex-direction: column;
   padding-bottom: 51px;
   margin-bottom: 38px;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 132px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 0;
+    margin-bottom: 71px;
+  }
 }
 
 .main__contacts {

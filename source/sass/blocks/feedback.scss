@@ -13,6 +13,55 @@
     width: 100vw;
     height: 6px;
   }
+
+  @media (min-width: $vp-768) {
+    background-image: url("../img/feedback-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-background-image-2x.jpg");
+    }
+
+    &::after {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    background-image: none;
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.feedback__wrapper {
+
+  @media (min-width: $vp-1150) {
+    max-width: 1052px;
+    padding-left: 174px;
+    padding-bottom: 96px;
+    background-image: url("../img/feedback-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    padding-bottom: 132px;
+    padding-right: 0;
+
+    &::after {
+      background-image: url("../img/zigzag-line-desktop.svg");
+      height: 23px;
+      content: "";
+      position: absolute;
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      bottom: 0;
+      left: 0;
+      width: 1050px;
+    }
+  }
 }
 
 .feedback__title {
@@ -22,18 +71,48 @@
   line-height: 30px;
   color: $color-black;
   margin-bottom: 14px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 83px;
+    margin-bottom: 39px;
+    font-size: 43px;
+    line-height: 50px;
+    width: 220px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.feedback__container {
+  @media (min-width: $vp-768) {
+    min-width: 668px;
+    width: 100%;
+    max-width: 875px;
+  }
 }
 
 .feedback__text {
   margin: 0;
   line-height: 30px;
   margin-bottom: 33px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
 }
 
 .feedback__inner-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
 }
 
 .feedback__person-name {
@@ -43,6 +122,10 @@
   line-height: 24px;
   color: $color-black;
   margin-bottom: 5px;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+  }
 }
 
 .feedback__person-link {
@@ -57,6 +140,18 @@
   width: 100%;
   min-height: 52px;
   margin-bottom: 38px;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    bottom: 132px;
+    right: 50px;
+    width: 175px;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 0;
+  }
 }
 
 .feedback__slider-button {
@@ -74,6 +169,10 @@
     & .feedback__slider-button-icon {
       transform: rotate(180deg);
     }
+  }
+
+  @media (min-width: $vp-768) {
+    outline: transparent;
   }
 
   &:hover .feedback__slider-button-icon {
@@ -95,4 +194,15 @@
 
 .feedback__button {
   min-height: 52px;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 83px;
+    right: 50px;
+    width: 175px;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 0;
+  }
 }
