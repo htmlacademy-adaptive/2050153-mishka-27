@@ -20,6 +20,12 @@
     line-height: 50px;
     margin-bottom: 42px;
   }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 39px;
+  }
 }
 
 .about-us__list {
