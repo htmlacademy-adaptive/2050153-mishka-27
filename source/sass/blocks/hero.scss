@@ -18,6 +18,7 @@
     background-image: url("../img/hero-backgrount-tablet-desktop.jpg");
     background-size: auto;
     background-position: 50% 111%;
+    padding-top: 20px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-backgrount-tablet-desktop-2x.jpg");
@@ -32,7 +33,7 @@
 .hero__title-container {
   width: 100%;
   padding: 73px 30px 120px 30px;
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
@@ -69,7 +70,7 @@
   padding: 0;
   list-style-type: none;
   width: 100%;
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
@@ -86,12 +87,27 @@
   align-items: center;
   position: relative;
 
-  &:nth-child(2n) {
-    background-color: $color-puerto-rico;
-  }
+  transition: margin 0.3s, background-color 0.3s;
 
   @media (min-width: $vp-768) {
     width: 100%;
+  }
+
+  &:hover,
+  &:focus-within {
+    margin-top: -5px;
+    background-color: $color-downy-1;
+    transition: margin 0.3s, background-color 0.3s;
+  }
+
+  &:nth-child(2n) {
+    background-color: $color-puerto-rico;
+
+    &:hover,
+    &:focus-within {
+      background-color: $color-puerto-rico-2;
+      transition: margin 0.3s, background-color 0.3s;
+    }
   }
 }
 
@@ -106,26 +122,32 @@
 }
 
 .hero__quick-link {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
   min-height: 103px;
-  padding: 24px 36px 18px 30px;
+  padding: 24px 36px 31px 0;
   font-family: $ff-opensans;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: padding 0.3s;
 
 
   @media (min-width: $vp-768) {
-    padding: 25px 36px 43px 36px;
+    padding: 25px 36px 34px 36px;
   }
 
   @media (min-width: $vp-1150) {
-    padding-bottom: 49px;
+    padding: 25px 36px 34px 37px;
   }
 
   &:hover {
-    transform: scaleY(1.05) translateY(-5px);
+    padding-bottom: 36px;
+    transition: padding 0.3s;
+
+    @media (min-width: $vp-768) {
+      padding-bottom: 39px;
+    }
 
     & .hero__quick-link-icon {
       opacity: 0.7;
@@ -133,7 +155,12 @@
   }
 
   &:active {
-    transform: none;
+    padding-bottom: 36px;
+    transition: padding 0.3s;
+
+    @media (min-width: $vp-768) {
+      padding-bottom: 39px;
+    }
 
     & .hero__quick-link-icon {
       opacity: 0.3;

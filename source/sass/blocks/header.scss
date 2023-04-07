@@ -29,7 +29,7 @@
 .header__wrapper {
   width: 100%;
   min-width: $vp-320;
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
