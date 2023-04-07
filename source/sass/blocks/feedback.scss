@@ -31,6 +31,7 @@
 
   @media (min-width: $vp-1150) {
     background-image: none;
+
     &::after {
       content: none;
     }
@@ -38,11 +39,9 @@
 }
 
 .feedback__wrapper {
-
   @media (min-width: $vp-1150) {
     max-width: 1052px;
     padding-left: 174px;
-    padding-bottom: 96px;
     background-image: url("../img/feedback-background-image.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
