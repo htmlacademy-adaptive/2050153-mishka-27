@@ -37,7 +37,7 @@ const html = () => { // name
     .pipe(gulp.dest('build'));
 }
 
-// Scripts
+// Script
 
 const script = () => {
   return gulp.src('source/js/*.js')
@@ -129,16 +129,9 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(script));
+  gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
-// // Watcher
-
-// const watcher = () => {
-//   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-//   gulp.watch('source/*.html').on('change', browser.reload);
-// }
 
 // Build
 
