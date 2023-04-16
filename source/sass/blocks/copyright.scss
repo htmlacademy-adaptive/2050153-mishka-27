@@ -1,9 +1,3 @@
-.copyright {
-  @media (min-width: $vp-768) {
-    width: max-content;
-  }
-}
-
 .copyright__icon {
   color: $color-downy;
 }
@@ -39,6 +33,10 @@
     pointer-events: none;
     opacity: 0.2;
   }
+
+  @media (min-width: $vp-768) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__description,
@@ -54,4 +52,5 @@
   font-size: 19px;
   line-height: 18px;
   color: $color-black;
+  max-width: 69%;
 }
