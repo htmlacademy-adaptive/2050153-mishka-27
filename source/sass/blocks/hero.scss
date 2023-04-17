@@ -16,9 +16,8 @@
 
   @media (min-width: $vp-768) {
     background-image: url("../img/hero-backgrount-tablet-desktop.jpg");
-    background-size: auto;
-    background-position: 50% 111%;
-    padding-top: 20px;
+    background-size: 150%;
+    background-position: 50% 112%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-backgrount-tablet-desktop-2x.jpg");
@@ -117,11 +116,20 @@
   &--interior {
     margin-right: -1px;
     margin-top: -5px;
+
+    @media (min-width: $vp-768) {
+      margin: 0;
+    }
   }
 
   &--lego-toy {
     margin-right: -10px;
     margin-top: -6px;
+
+    @media (min-width: $vp-768) {
+      margin: 0;
+      margin-right: -2px;
+    }
   }
 }
 
@@ -138,7 +146,7 @@
 
 
   @media (min-width: $vp-768) {
-    padding: 25px 36px 34px 36px;
+    padding: 25px 36px 42px 36px;
   }
 
   @media (min-width: $vp-1150) {

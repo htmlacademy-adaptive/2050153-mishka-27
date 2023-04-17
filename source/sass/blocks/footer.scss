@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $vp-768) {
-    min-height: 143px;
+    min-height: 141px;
     display: flex;
   }
 }
@@ -16,6 +16,7 @@
     width: 100%;
     max-width: $vp-1150;
     margin: 0 auto;
+    margin-top: -7px;
   }
 }
 

@@ -4,7 +4,7 @@
   top: 79px;
 
   @media (min-width: $vp-768) {
-    width: 53%;
+    width: 52%;
     height: 100%;
     top: 0;
     margin-left: auto;
@@ -16,9 +16,9 @@
     &::before {
       position: absolute;
       content: "";
-      width: 200vw;
-      right: -100vw;
-      // left: 0;
+      width: 152vw;
+      left: -100vw;
+      right: 0;
       height: 100%;
       background-color: $color-white;
       border-bottom: 1px solid $color-whisper-grey;
@@ -37,7 +37,7 @@
   background-color: $color-white;
 
   @media (min-width: $vp-768) {
-    padding: 0 50px 0 38px;
+    padding: 0 50px 0 31px;
     border-left: 1px solid rgba($color-black, 0.1);
     height: 100%;
     display: flex;
@@ -45,7 +45,7 @@
     background-color: inherit;
 
     &--search {
-      padding: 0 20px 0 20px;
+      padding: 1px 20px 0 20px;
     }
   }
 }
@@ -88,7 +88,7 @@
     min-width: 211px;
     width: 100%;
     display: flex;
-    padding: 37px 0 26px 0;
+    padding: 35px 0 20px 0;
 
     &--search {
       min-width: 20%;
