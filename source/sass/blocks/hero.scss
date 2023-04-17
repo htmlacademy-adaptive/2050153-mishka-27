@@ -7,7 +7,7 @@
   background-color: $color-snow;
   background-image: url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -18%;
+  background-position: 50% -15%;
   background-size: auto;
 
   @media (min-resolution: 2dppx) {
@@ -115,7 +115,13 @@
   transform: translateY(4px);
 
   &--interior {
-    margin-right: 10px;
+    margin-right: -1px;
+    margin-top: -5px;
+  }
+
+  &--lego-toy {
+    margin-right: -10px;
+    margin-top: -6px;
   }
 }
 
@@ -125,7 +131,7 @@
   justify-content: space-between;
   flex-grow: 1;
   min-height: 103px;
-  padding: 24px 36px 31px 30px;
+  padding: 24px 36px 17px 30px;
   font-family: $ff-opensans;
   cursor: pointer;
   transition: padding 0.3s;

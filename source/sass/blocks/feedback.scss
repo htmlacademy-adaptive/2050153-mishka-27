@@ -139,8 +139,8 @@
   margin: 0;
   display: flex;
   width: 100%;
-  min-height: 52px;
-  margin-bottom: 38px;
+  min-height: 50px;
+  margin-bottom: 40px;
 
   @media (min-width: $vp-768) {
     position: absolute;
@@ -162,7 +162,7 @@
   background-color: inherit;
   border: none;
   outline: 1px solid $color-whisper-grey;
-  min-height: 52px;
+  min-height: 50px;
   cursor: pointer;
 
   &--left {
@@ -195,7 +195,7 @@
 }
 
 .feedback__button {
-  min-height: 52px;
+  min-height: 48px;
 
   @media (min-width: $vp-768) {
     position: absolute;

@@ -45,7 +45,7 @@
 
 .about-us__item {
   margin: 0;
-  padding-top: 82px;
+  padding-top: 83px;
   position: relative;
 
   &::before {
@@ -59,6 +59,7 @@
   &--eco::before {
     content: url("../img/eco-flower-icon.svg");
     top: 28px;
+    left: 8px;
   }
 
   &--price::before {
@@ -69,21 +70,25 @@
   &--likes::before {
     content: url("../../img/likes-heart-icon.svg");
     top: 35px;
+    left: 8px;
   }
 
   &--hand-made::before {
     content: url("../../img/hand-made-ball-icon.svg");
     top: 32px;
+    left: 4px;
   }
 
   &--support::before {
     content: url("../../img/support-rocket-icon.svg");
     top: 33px;
+    left: -4px;
   }
 
   &--present::before {
     content: url("../../img/present-icon.svg");
     top: 32px;
+    left: 4px;
   }
 }
 
