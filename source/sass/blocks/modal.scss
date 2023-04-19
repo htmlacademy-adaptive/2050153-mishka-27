@@ -84,7 +84,7 @@
   @media (min-width: $vp-768) {
     font-size: 17px;
     margin-bottom: 20px;
-    transform: translateY(3px);
+    transform: translateY(1px);
   }
 }
 
@@ -109,6 +109,9 @@
   border: 2px solid rgba($color-charcoal-grey, 0.1);
   width: 100%;
   min-height: 52px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
   cursor: pointer;
 
   &:hover {
