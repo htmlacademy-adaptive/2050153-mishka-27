@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .main__hero {
@@ -27,7 +28,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin-bottom: 68px;
+    margin-bottom: 69px;
+    padding: 0;
   }
 }
 
@@ -41,7 +43,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin-bottom: 90px;
+    margin-bottom: 65px;
   }
 }
 

@@ -4,7 +4,7 @@
 
 .about-us__wrapper {
   @media (min-width: $vp-1150) {
-    width: 794px;
+    width: 798px;
   }
 }
 
@@ -25,7 +25,7 @@
   @media (min-width: $vp-1150) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 39px;
+    margin-bottom: 12px;
   }
 }
 
@@ -107,6 +107,14 @@
 
     &--support::before {
       left: -8px;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    &--hand-made,
+    &--support,
+    &--present {
+      transform: translateX(-7px);
     }
   }
 }

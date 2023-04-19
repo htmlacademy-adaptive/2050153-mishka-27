@@ -91,7 +91,7 @@
     font-size: 53px;
     line-height: 57px;
     padding-top: 115px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     margin-left: 175px;
     z-index: 1;
   }
@@ -118,8 +118,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    top: 115px;
-    left: 74px;
+    top: 121px;
+    left: 82px;
   }
 }
 
@@ -141,6 +141,7 @@
     width: 292px;
     padding: 0;
     margin-left: 175px;
+    margin-bottom: 51px;
   }
 }
 
@@ -163,7 +164,7 @@
     width: 292px;
     padding: 0;
     margin-left: 175px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
   }
 }
 
@@ -175,6 +176,10 @@
   @media (min-width: $vp-768) {
     grid-template-columns: 33% 51%;
   }
+
+  @media (min-width: $vp-1150) {
+    grid-template-columns: 34% 51%;
+  }
 }
 
 .promotion__text,
@@ -184,6 +189,11 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 11px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-bottom: 13px;
+    margin-top: 7px;
   }
 }
 
@@ -198,7 +208,7 @@
     min-height: 404px;
     max-height: 441px;
     position: absolute;
-    top: 140px;
+    bottom: 0;
     right: 0;
     margin: 0;
     padding-right: 50px;
@@ -253,4 +263,8 @@
   width: 100%;
   flex-grow: 1;
   padding: 0 35px;
+
+  @media (min-width: $vp-1150) {
+    font-size: 17px;
+  }
 }

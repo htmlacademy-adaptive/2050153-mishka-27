@@ -18,7 +18,7 @@
     order: 1;
     width: 40%;
     margin-right: auto;
-    grid-template-columns: 167px 212px;
+    grid-template-columns: 184px 227px;
     column-gap: 0;
     z-index: 4;
   }
@@ -47,7 +47,6 @@
   @media (min-width: $vp-768) {
     z-index: 2;
     background-color: inherit;
-    width: 167px;
     display: flex;
     align-items: flex-start;
     height: 100%;
@@ -79,6 +78,7 @@
 
   @media (min-width: $vp-1150) {
     padding: 33px 0 20px 0;
+    font-size: 17px;
   }
 }
 

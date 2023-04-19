@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100%;
+  min-width: 320px;
+  width: 100%;
   z-index: 1;
   background-color: $color-snow;
   background-image: url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% -15%;
-  background-size: auto;
+  background-size: $vp-320, 100%, contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-background-mobile-2x.jpg");
@@ -16,7 +17,6 @@
 
   @media (min-width: $vp-768) {
     background-image: url("../img/hero-backgrount-tablet-desktop.jpg");
-    background-size: 150%;
     background-position: 50% 112%;
 
     @media (min-resolution: 2dppx) {
@@ -25,7 +25,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    background-position: 50% 126%;
+    background-position: 50% 134%;
+    // background-size: 100%;
   }
 }
 
@@ -37,6 +38,10 @@
 
   @media (min-width: $vp-768) {
     padding: 66px 50px 372px 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 87px 50px 356px 50px;
   }
 }
 
@@ -130,6 +135,11 @@
       margin: 0;
       margin-right: -2px;
     }
+
+    @media (min-width: $vp-1150) {
+      margin-right: -1px;
+      margin-top: 2px;
+    }
   }
 }
 
@@ -139,7 +149,7 @@
   justify-content: space-between;
   flex-grow: 1;
   min-height: 103px;
-  padding: 24px 36px 17px 30px;
+  padding: 24px 36px 25px 30px;
   font-family: $ff-opensans;
   cursor: pointer;
   transition: padding 0.3s;
@@ -150,19 +160,23 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 25px 36px 34px 37px;
+    padding: 25px 36px 49px 37px;
   }
 
   &:hover {
-    padding-bottom: 36px;
+    padding-bottom: 27px;
     transition: padding 0.3s;
 
     @media (min-width: $vp-768) {
-      padding-bottom: 39px;
+      padding-bottom: 47px;
     }
 
     & .hero__quick-link-icon {
       opacity: 0.7;
+    }
+
+    @media (min-width: $vp-1150) {
+      padding-bottom: 54px;
     }
   }
 
@@ -172,6 +186,10 @@
 
     @media (min-width: $vp-768) {
       padding-bottom: 39px;
+    }
+
+    @media (min-width: $vp-1150) {
+      padding-bottom: 49px;
     }
 
     & .hero__quick-link-icon {

@@ -13,11 +13,13 @@
     display: grid;
     grid-template-columns: 84px 1fr;
 
+
     &::before {
       position: absolute;
       content: "";
-      width: 152vw;
+      width: 200vw;
       left: -100vw;
+      overflow: hidden;
       right: 0;
       height: 100%;
       background-color: $color-white;
@@ -28,7 +30,8 @@
 
   @media (min-width: $vp-1150) {
     order: 2;
-    width: 36%;
+    width: 35%;
+    grid-template-columns: 85px 1fr;
   }
 }
 
@@ -46,6 +49,14 @@
 
     &--search {
       padding: 1px 20px 0 20px;
+    }
+
+    @media (min-width: $vp-1150) {
+      padding-right: 52px;
+
+      &--search {
+        padding: 1px 20px 0 20px;
+      }
     }
   }
 }
@@ -129,5 +140,9 @@
     width: 211px;
     text-align: end;
     margin-left: auto;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 200px;
   }
 }

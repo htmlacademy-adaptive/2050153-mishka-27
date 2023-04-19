@@ -53,4 +53,8 @@
   line-height: 18px;
   color: $color-black;
   max-width: 69%;
+
+  @media (min-width: $vp-1150) {
+    margin-right: 29px;
+  }
 }

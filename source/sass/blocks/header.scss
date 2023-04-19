@@ -10,6 +10,7 @@
 
   @media (min-width: $vp-768) {
     align-items: center;
+    overflow: hidden;
 
     &::before {
       position: absolute;
@@ -43,7 +44,7 @@
 
 .header__logo {
   z-index: 1;
-  width: 100%;
+  width: max-content;
   min-height: 79px;
 
   @media (min-width: $vp-768) {
