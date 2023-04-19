@@ -38,7 +38,7 @@
     &::before {
       background-image: url("../img/zigzag-fill-desktop.svg");
       height: 34px;
-      top: -34px;
+      top: -33px;
     }
 
     &::after {
@@ -238,7 +238,7 @@
     width: 292px;
     padding: 0;
     margin-left: 175px;
-    margin-bottom: 96px;
+    margin-bottom: 98px;
   }
 }
 
@@ -250,6 +250,7 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 33px;
+    margin-left: -2px;
     font-size: 20px;
     line-height: 24px;
     overflow: hidden;
@@ -264,7 +265,11 @@
   flex-grow: 1;
   padding: 0 35px;
 
-  @media (min-width: $vp-1150) {
+  @media (min-width: $vp-768) {
     font-size: 17px;
+  }
+
+  @media (min-width: $vp-1150) {
+    min-height: 48px;
   }
 }

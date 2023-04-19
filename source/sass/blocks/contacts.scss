@@ -69,7 +69,7 @@
   @media (min-width: $vp-1150) {
     grid-template-columns: 331px;
     padding: 0;
-    margin: 0 23px 83px 174px;
+    margin: 0 23px 84px 174px;
   }
 }
 
@@ -218,13 +218,15 @@
   padding: 0 30px;
 
   @media (min-width: $vp-768) {
-    width: 230px;
+    width: 228px;
     margin: 0 auto;
     font-size: 17px;
+    min-height: 48px;
   }
 
   @media (min-width: $vp-1150) {
     margin-left: 174px;
+    padding-top: 4px;
     transform: translateX(4px);
     width: 226px;
   }

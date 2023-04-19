@@ -17,7 +17,8 @@
 
   @media (min-width: $vp-768) {
     background-image: url("../img/hero-backgrount-tablet-desktop.jpg");
-    background-position: 50% 112%;
+    background-position: top -89px center;
+    background-size: 1150px auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-backgrount-tablet-desktop-2x.jpg");
@@ -25,8 +26,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    background-position: 50% 134%;
-    // background-size: 100%;
+    background-position: top -71px center;
   }
 }
 
@@ -149,7 +149,7 @@
   justify-content: space-between;
   flex-grow: 1;
   min-height: 103px;
-  padding: 24px 36px 25px 30px;
+  padding: 24px 36px 22px 30px;
   font-family: $ff-opensans;
   cursor: pointer;
   transition: padding 0.3s;
@@ -160,7 +160,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 25px 36px 49px 37px;
+    padding: 25px 36px 48px 37px;
   }
 
   &:hover {
@@ -176,7 +176,7 @@
     }
 
     @media (min-width: $vp-1150) {
-      padding-bottom: 54px;
+      padding-bottom: 53px;
     }
   }
 
