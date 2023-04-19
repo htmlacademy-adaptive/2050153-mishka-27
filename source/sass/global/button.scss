@@ -23,6 +23,7 @@
 
 .button:active {
   color: rgba($color-white, 0.3);
+  background-color: $color-charcoal-grey;
 }
 
 .button:focus-visible {
