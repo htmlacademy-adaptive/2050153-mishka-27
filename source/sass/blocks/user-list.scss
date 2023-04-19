@@ -1,0 +1,148 @@
+.user-list {
+  width: 100%;
+  position: relative;
+  top: 79px;
+
+  @media (min-width: $vp-768) {
+    width: 52%;
+    height: 100%;
+    top: 0;
+    margin-left: auto;
+    z-index: 3;
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 200vw;
+      left: -100vw;
+      overflow: hidden;
+      right: 0;
+      height: 100%;
+      background-color: $color-white;
+      border-bottom: 1px solid $color-whisper-grey;
+      z-index: -2;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    order: 2;
+    width: 35%;
+    grid-template-columns: 85px 1fr;
+  }
+}
+
+.user-list__item {
+  z-index: 2;
+  background-color: $color-white;
+
+  @media (min-width: $vp-768) {
+    padding: 0 50px 0 31px;
+    border-left: 1px solid rgba($color-black, 0.1);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: inherit;
+
+    &--search {
+      padding: 1px 20px 0 20px;
+    }
+
+    @media (min-width: $vp-1150) {
+      padding-right: 52px;
+
+      &--search {
+        padding: 1px 20px 0 20px;
+      }
+    }
+  }
+}
+
+.user-list__link {
+  color: inherit;
+  display: flex;
+  position: relative;
+  padding: 22px 0 22px 0;
+
+  &:hover .user-list__link-icon {
+    fill: $color-downy;
+    color: $color-downy;
+    opacity: 1;
+  }
+
+  &:hover .user-list__link-text {
+    opacity: 0.6;
+  }
+
+  &:active .user-list__link-icon {
+    fill: $color-downy;
+    color: $color-downy;
+    opacity: 0.3;
+  }
+
+  &:active .user-list__link-text {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-charcoal-grey;
+  }
+
+  &:invalid {
+    background-color: $color-whisper-grey;
+  }
+
+  @media (min-width: $vp-768) {
+    min-width: 211px;
+    width: 100%;
+    display: flex;
+    padding: 35px 0 20px 0;
+
+    &--search {
+      min-width: 20%;
+      justify-content: center;
+    }
+
+    &--search .user-list__link-text {
+      display: none;
+    }
+  }
+}
+
+.user-list__link--current {
+  cursor: default;
+  pointer-events: none;
+}
+
+.user-list__link-icon {
+  position: absolute;
+  top: 25px;
+  left: -46px;
+  color: inherit;
+  opacity: 0.2;
+
+  @media (min-width: $vp-768) {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: inline-block;
+  }
+}
+
+.user-list__link-text {
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    width: 211px;
+    text-align: end;
+    margin-left: auto;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 200px;
+  }
+}

@@ -1,0 +1,140 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    min-height: 89px;
+    width: 100%;
+  }
+}
+
+.nav--closed .nav__item {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.nav--nojs {
+  position: relative;
+  margin-top: 79px;
+}
+
+.nav--nojs .logo {
+  top: -56px;
+}
+
+.nav__toggle {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 29px;
+  right: 30px;
+  left: auto;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  z-index: 3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: 2px solid rgb(181, 181, 181);
+    outline-offset: 2px;
+    background-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.nav--closed .nav__toggle {
+  background-image: url("../img/toggle-open-button.svg");
+  background-position: 0 3px;
+}
+
+.nav--opened .nav__toggle {
+  background-image: url("../img/toggle-close-button.svg");
+  background-position: 0 0;
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
+.nav--nojs .nav__list {
+  position: static;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  display: flex;
+  min-height: 79px;
+  width: 100%;
+  align-items: center;
+  padding-left: 24%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+  box-shadow: 0 1px 0 $color-whisper-grey, inset 0 1px 0 $color-whisper-grey;
+
+  @media (min-width: $vp-768) {
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    min-height: 89px;
+  }
+}
+
+.nav--nojs .nav__item {
+  display: flex;
+}
+
+.nav__item a {
+  color: $color-black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

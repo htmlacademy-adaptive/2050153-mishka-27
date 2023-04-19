@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Наталья Зиновьева](https://up.htmlacademy.ru/adaptive/27/user/2050153).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
@@ -30,7 +30,7 @@ _`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `pa
 
 Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808191-54b4ac00-a190-11e9-92f8-ca77249661c3.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808191-54b4ac00-a190-11e9-92f8-ca77049661c3.jpg">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 

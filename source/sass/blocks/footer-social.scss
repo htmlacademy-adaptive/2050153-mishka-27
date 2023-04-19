@@ -1,0 +1,47 @@
+.footer-social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 142px;
+  min-height: 27px;
+}
+
+.footer-social__item {
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  padding-top: 2px;
+}
+
+.footer-social__icon {
+  color: $color-aubergine;
+  fill: $color-aubergine;
+}
+
+.footer-social__button {
+  text-decoration: none;
+  background-color: inherit;
+  color: $color-aubergine;
+
+  &:hover .footer-social__icon {
+    color: $color-puerto-rico-2;
+    fill: $color-puerto-rico-2;
+  }
+
+  &:active .footer-social__icon {
+    color: rgba($color-puerto-rico-2, 0.3);
+    fill: rgba($color-puerto-rico-2, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-puerto-rico-2;
+  }
+
+  &:disabled .footer-social__icon {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
